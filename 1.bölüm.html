@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.Bölüm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="1.bölüm.css">
+</head>
+
+<body>
+  
+    <header>
+
+        <img src="img/sene 2021.png" class="sene" alt="">
+
+        <div class="scene">
+            <img onmouseover="bigImg()"   onmouseout="bigImg2() " src="img/1.bölüm.jpg" class="scene-item-image" alt="">
+           
+    </header>
+
+<div class="button">
+  <a class="effect1" href="2.bölüm.html">
+    2. BÖLÜM
+    <span class="bg"></span>
+  </a>
+</div>
+    <script>
+
+
+        
+var downs = document.getElementById('DownUp');
+        
+        document.addEventListener('scroll', function(e) {
+        
+        if (window.scrollY>50) {
+            downs.classList.add('fa-angle-up');
+            downs.classList.remove('fa-angle-down');
+        } else {
+            downs.classList.add('fa-angle-down');
+            downs.classList.remove('fa-angle-up');
+        }
+        
+        });
+        
+        
+        downs.addEventListener('click', function(e) {
+            position= document.documentElement;
+            if (window.scrollY>50) {
+                position.scrollTop   =0 ;
+            } else {
+                position.scrollTop   = 900;
+            }
+        
+        
+           
+        
+        });
+        
+        </script>
+  
+
+    <script src="1.bölüm.js"></script>
+</body>
+
+</html>

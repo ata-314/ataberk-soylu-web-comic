@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web comıc sıte 1.1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  
+</head>
+<body>
+<div id="loader">
+
+    </div>
+    <header>
+       
+       <nav>
+            <div class="container">
+                <img src="img/logo.png" class="logo" alt="">
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                </div>
+            </div>
+       </nav>
+        
+        <h1 class="big-title translate" data-speed="0.1">2021</h1>
+      
+        <img src="img/çerçeve.png" class="çerçeve translate" data-speed="-0.2" alt="">
+        <img src="img/çocuklar.png" class="çocuklar translate" data-speed="-0.2" alt="">
+        <img src="img/zemin.png" class="zemin translate" data-speed="0.3" alt="">
+        <img src="img/şehir güneş.png" class="şehirgüneş translate" data-speed="0.3" alt="">
+        <img src="img/bg.png" class="bg translate" data-speed="0.5" alt="">
+
+    </header>
+
+    <section>
+        <div class="shadow"></div>
+        <div class="container">
+            <div class="content ">
+                <a href="1.bölüm.html">
+                <h3 class="title">
+                 <p>Birinci Bölüm  </p>   
+                    <div class="border"></div>
+                </h3></a>
+                <p class="text">Hayalperest bir çocuğun, dostunu kaybedişin ardından, dostu ile düşledikleri hayallerin peşinden koşmak isteyen, hayallerine sımsıkı tutunan ve dostunun huzur içinde uyuması için elinden geleni yapmaya çalışırken, yaşadıklarını ve sürekli yaşadığı dalışlara eşlik edeceğiz</p>
+
+                <p class="text"> <i class="fas fa-arrow-right"></i><a href="1.bölüm.html" class="devam"> Devamını Oku  </a>   </p>
+            </div>
+
+            <div class="imgContainer opacity">
+                <img src="img/bölüm 1.png" alt="">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="content ">
+                <a href="2.bölüm.html">
+                <h3 class="title">
+                 <p>İkinci Bölüm  </p>   
+                    <div class="border"></div>
+                </h3></a>
+                <p class="text">Her anında dostunu düşleyen ve onu her zaman yanında hisseden arakdaşı, sürekli anılara dalıyor ve o an dostunun yanında olmasını hayal ediyor ve onu kurtarmayı düşlüyordu ama bu asla gerçek olamayacaktı ve bunun farkına varması gerekiyordu.</p>
+
+                <p class="text"> <i class="fas fa-arrow-right"></i><a href="2.bölüm.html" class="devam"> Devamını Oku  </a>   </p>
+            </div>
+
+            <div class="imgContainer opacity">
+                <img src="img/bölüm 2.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    
+    <i id="DownUp" class="DownUp fas "></i>
+    <script src="app.js"></script>
+	<script>
+
+document.documentElement.style.setProperty('--animate-duration', '2s');
+
+// All animations will take half the time to accomplish
+document.documentElement.style.setProperty('--animate-duration', '.3s');
+
+
+var preloader = document.getElementById('loader');
+var downs = document.getElementById('DownUp');
+
+      function preLoaderHandler(){
+     preloader.parentNode.removeChild(preloader);
+         
+      }
+
+
+  
+
+      setInterval(preLoaderHandler,4050 );
+      downs.classList.add('fa-angle-down');
+document.addEventListener('scroll', function(e) {
+
+if (window.scrollY>50) {
+    downs.classList.add('fa-angle-up');
+    downs.classList.remove('fa-angle-down');
+} else {
+    downs.classList.add('fa-angle-down');
+    downs.classList.remove('fa-angle-up');
+}
+
+});
+
+
+downs.addEventListener('click', function(e) {
+    position= document.documentElement;
+    if (window.scrollY>50) {
+        position.scrollTop   =0 ;
+    } else {
+        position.scrollTop   = 600;
+    }
+
+
+   
+
+});
+
+</script>
+
+
+
+</script>
+</body>
+</html>

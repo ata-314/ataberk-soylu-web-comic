@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.Bölüm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="2.bölüm.css">
+</head>
+
+<body>
+    <header>
+
+
+        <div class="scene">
+            <img onmouseover="bigImg()"   onmouseout="bigImg2() " src="img/2.bölüm.jpg" class="scene-item-image" alt="">
+           
+        
+
+
+
+    </header>
+
+
+    <script>
+
+
+        
+var downs = document.getElementById('DownUp');
+        
+        document.addEventListener('scroll', function(e) {
+        
+        if (window.scrollY>50) {
+            downs.classList.add('fa-angle-up');
+            downs.classList.remove('fa-angle-down');
+        } else {
+            downs.classList.add('fa-angle-down');
+            downs.classList.remove('fa-angle-up');
+        }
+        
+        });
+        
+        
+        downs.addEventListener('click', function(e) {
+            position= document.documentElement;
+            if (window.scrollY>50) {
+                position.scrollTop   =0 ;
+            } else {
+                position.scrollTop   = 900;
+            }
+        
+        
+           
+        
+        });
+        
+        </script>
+
+    <script src="2.bölüm.js"></script>
+</body>
+
+</html>

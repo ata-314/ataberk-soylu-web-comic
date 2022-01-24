@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+    margin: 0px ;
+	display:block;
+    
+}
+
+.container{
+    max-width: 90rem;
+    padding: 0 2rem;
+    margin:0 auto;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    position:relative;
+    overflow: hidden;
+}
+
+header:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.05);
+    z-index: 25;
+}
+
+.DownUp{
+color: white;
+    position: fixed;
+    bottom: 0px;
+    right:48%;
+    z-index: 500;
+    font-size: 30px;
+    color:#DD2545;
+}
+
+.zemin{
+    position: absolute;
+  
+    width: 100%;
+    bottom: 0px;
+    z-index: 20;
+}
+
+.çocuklar{
+    position: absolute;
+    width: 16%;
+    bottom: -20px;
+    margin-left: 43%;
+    z-index: 21;
+}
+
+.şehirgüneş{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    margin-left:0%;
+    z-index: 18;
+}
+
+#loader{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background:url('gisf.gif') no-repeat center;
+	z-index: 999;
+    transition-duration: 3s;
+    transition-delay: 1s;
+}
+
+
+
+
+.bg{
+    position:absolute;
+    width:  100%;
+    height: 100%;
+ 
+    z-index: 17;
+}
+
+.çerçeve{
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    height: 130%;
+    z-index: 22;
+}
+
+nav{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    z-index: 30;
+    background: linear-gradient(to bottom, rgba( 0, 0, 0, 0.05), transparent)
+}
+
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color: white;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    width: 5%;
+}
+
+.logo span{
+    font-weight: 300;
+}
+
+.big-title{
+    position:absolute;
+    z-index: 36;
+    line-height: 12rem;
+    top: 280px;
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.664);
+    letter-spacing:30px;
+
+}
+
+section{
+    width: 100%;
+    background-color:#030104;
+    position: relative;
+}
+
+section .container{
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
+
+section img{
+    width: 100%;
+}
+
+section .container > *{
+    margin: 2rem;
+}
+
+.content{
+    color: white;
+    padding-left: 100px;
+   
+}
+
+.imgContainer{
+    transform:translateY(30px);
+    opacity: 100;
+   
+}
+
+.title{
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
+    letter-spacing:3.8px;
+    position: relative;
+    color: white;
+    
+}
+
+.border{
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+}
+
+.shadow{
+    position: absolute;
+    bottom: 100%;
+    height: 300px;
+    width: 100%;
+    left: 0;
+    z-index: 20;
+    background: linear-gradient(to top, #151515, transparent);
+}
+
+.opacity{
+    opacity: 0;
+}
+
+.fa-arrow-right{
+    color:#DD2545;
+    margin-top: 10px;
+
+}
+
+.devam{
+    color:#DD2545;
+}
+
+@media (max-width: 850px){
+    section .container{
+        grid-template-columns: 3fr;
+    }
+
+
+    .big-title {
+     
+      
+        left: 25px;
+        text-align: center;
+        font-size: 2rem;
+       
+        
+    }
+
+    header {
+        width: 100%;
+        height: 70vh;
+  
+        position: relative;
+        overflow: hidden;
+    }
+}
+
