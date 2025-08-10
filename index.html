@@ -1,131 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>web comıc sıte 1.1</title>
+    <title>Web Comic Site - Paralaks Efektleri</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-  
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-<div id="loader">
-
+    <!-- Enhanced Loader -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <h2>Yükleniyor...</h2>
+        </div>
     </div>
-    <header>
-       
-       <nav>
-            <div class="container">
-                <img src="img/logo.png" class="logo" alt="">
-                <div class="hamburger-menu">
-                    <div class="bar"></div>
-                </div>
-            </div>
-       </nav>
-        
-        <h1 class="big-title translate" data-speed="0.1">2021</h1>
-      
-        <img src="img/çerçeve.png" class="çerçeve translate" data-speed="-0.2" alt="">
-        <img src="img/çocuklar.png" class="çocuklar translate" data-speed="-0.2" alt="">
-        <img src="img/zemin.png" class="zemin translate" data-speed="0.3" alt="">
-        <img src="img/şehir güneş.png" class="şehirgüneş translate" data-speed="0.3" alt="">
-        <img src="img/bg.png" class="bg translate" data-speed="0.5" alt="">
 
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <img src="img/logo.png" class="logo" alt="Logo">
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Ana Sayfa</a>
+                <a href="#chapters" class="nav-link">Bölümler</a>
+                <a href="#about" class="nav-link">Hakkında</a>
+            </div>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Enhanced Parallax -->
+    <header id="home" class="hero">
+        <!-- Parallax Background Layers -->
+        <div class="parallax-layer stars" data-speed="0.1"></div>
+        <div class="parallax-layer clouds" data-speed="0.2"></div>
+        <img src="img/bg.png" class="parallax-layer bg-layer" data-speed="0.3" alt="Background">
+        <img src="img/şehir güneş.png" class="parallax-layer city-sun" data-speed="0.4" alt="City and Sun">
+        <img src="img/zemin.png" class="parallax-layer ground" data-speed="0.5" alt="Ground">
+        <img src="img/çocuklar.png" class="parallax-layer children" data-speed="0.6" alt="Children">
+        <img src="img/çerçeve.png" class="parallax-layer frame" data-speed="0.7" alt="Frame">
+        
+        <!-- Floating Elements -->
+        <div class="floating-elements">
+            <div class="floating-item" data-speed="0.8">
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="floating-item" data-speed="0.9">
+                <i class="fas fa-heart"></i>
+            </div>
+            <div class="floating-item" data-speed="1.0">
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <h1 class="big-title" data-speed="0.1">2021</h1>
+            <p class="hero-subtitle" data-speed="0.2">Hayallerin Peşinde</p>
+            <div class="hero-buttons" data-speed="0.3">
+                <a href="#chapters" class="btn btn-primary">Bölümleri Keşfet</a>
+                <a href="#about" class="btn btn-secondary">Hakkında</a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator" data-speed="0.4">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
     </header>
 
-    <section>
-        <div class="shadow"></div>
-        <div class="container">
-            <div class="content ">
-                <a href="1.bölüm.html">
-                <h3 class="title">
-                 <p>Birinci Bölüm  </p>   
-                    <div class="border"></div>
-                </h3></a>
-                <p class="text">Hayalperest bir çocuğun, dostunu kaybedişin ardından, dostu ile düşledikleri hayallerin peşinden koşmak isteyen, hayallerine sımsıkı tutunan ve dostunun huzur içinde uyuması için elinden geleni yapmaya çalışırken, yaşadıklarını ve sürekli yaşadığı dalışlara eşlik edeceğiz</p>
-
-                <p class="text"> <i class="fas fa-arrow-right"></i><a href="1.bölüm.html" class="devam"> Devamını Oku  </a>   </p>
-            </div>
-
-            <div class="imgContainer opacity">
-                <img src="img/bölüm 1.png" alt="">
+    <!-- Enhanced Content Section -->
+    <section id="chapters" class="content-section">
+        <div class="section-bg"></div>
+        
+        <!-- Chapter 1 -->
+        <div class="chapter-container">
+            <div class="container">
+                <div class="content-wrapper">
+                    <div class="content">
+                        <div class="chapter-number">01</div>
+                        <a href="1.bölüm.html">
+                            <h3 class="title">
+                                <span>Birinci Bölüm</span>
+                                <div class="border"></div>
+                            </h3>
+                        </a>
+                        <p class="text">Hayalperest bir çocuğun, dostunu kaybedişin ardından, dostu ile düşledikleri hayallerin peşinden koşmak isteyen, hayallerine sımsıkı tutunan ve dostunun huzur içinde uyuması için elinden geleni yapmaya çalışırken, yaşadıklarını ve sürekli yaşadığı dalışlara eşlik edeceğiz.</p>
+                        <div class="chapter-meta">
+                            <span class="reading-time"><i class="fas fa-clock"></i> 5 dk okuma</span>
+                            <span class="chapter-date"><i class="fas fa-calendar"></i> 2021</span>
+                        </div>
+                        <a href="1.bölüm.html" class="read-more">
+                            <span>Devamını Oku</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="imgContainer">
+                        <div class="image-wrapper">
+                            <img src="img/bölüm 1.png" alt="Bölüm 1">
+                            <div class="image-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="container">
-            <div class="content ">
-                <a href="2.bölüm.html">
-                <h3 class="title">
-                 <p>İkinci Bölüm  </p>   
-                    <div class="border"></div>
-                </h3></a>
-                <p class="text">Her anında dostunu düşleyen ve onu her zaman yanında hisseden arakdaşı, sürekli anılara dalıyor ve o an dostunun yanında olmasını hayal ediyor ve onu kurtarmayı düşlüyordu ama bu asla gerçek olamayacaktı ve bunun farkına varması gerekiyordu.</p>
-
-                <p class="text"> <i class="fas fa-arrow-right"></i><a href="2.bölüm.html" class="devam"> Devamını Oku  </a>   </p>
-            </div>
-
-            <div class="imgContainer opacity">
-                <img src="img/bölüm 2.png" alt="">
+        <!-- Chapter 2 -->
+        <div class="chapter-container">
+            <div class="container">
+                <div class="content-wrapper reverse">
+                    <div class="imgContainer">
+                        <div class="image-wrapper">
+                            <img src="img/bölüm 2.png" alt="Bölüm 2">
+                            <div class="image-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="chapter-number">02</div>
+                        <a href="2.bölüm.html">
+                            <h3 class="title">
+                                <span>İkinci Bölüm</span>
+                                <div class="border"></div>
+                            </h3>
+                        </a>
+                        <p class="text">Her anında dostunu düşleyen ve onu her zaman yanında hisseden arkadaşı, sürekli anılara dalıyor ve o an dostunun yanında olmasını hayal ediyor ve onu kurtarmayı düşlüyordu ama bu asla gerçek olamayacaktı ve bunun farkına varması gerekiyordu.</p>
+                        <div class="chapter-meta">
+                            <span class="reading-time"><i class="fas fa-clock"></i> 7 dk okuma</span>
+                            <span class="chapter-date"><i class="fas fa-calendar"></i> 2021</span>
+                        </div>
+                        <a href="2.bölüm.html" class="read-more">
+                            <span>Devamını Oku</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-
     </section>
 
-    
-    <i id="DownUp" class="DownUp fas "></i>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">Hikayemiz Hakkında</h2>
+                <p class="about-text">Bu web comic, dostluk, hayaller ve kayıp temalarını işleyen, duygusal derinliği olan bir hikaye sunuyor. Her bölümde karakterlerin iç dünyalarına yolculuk yapıyoruz.</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number">2</span>
+                        <span class="stat-label">Bölüm</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">2021</span>
+                        <span class="stat-label">Yılı</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Hayal</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
     <script src="app.js"></script>
-	<script>
-
-document.documentElement.style.setProperty('--animate-duration', '2s');
-
-// All animations will take half the time to accomplish
-document.documentElement.style.setProperty('--animate-duration', '.3s');
-
-
-var preloader = document.getElementById('loader');
-var downs = document.getElementById('DownUp');
-
-      function preLoaderHandler(){
-     preloader.parentNode.removeChild(preloader);
-         
-      }
-
-
-  
-
-      setInterval(preLoaderHandler,4050 );
-      downs.classList.add('fa-angle-down');
-document.addEventListener('scroll', function(e) {
-
-if (window.scrollY>50) {
-    downs.classList.add('fa-angle-up');
-    downs.classList.remove('fa-angle-down');
-} else {
-    downs.classList.add('fa-angle-down');
-    downs.classList.remove('fa-angle-up');
-}
-
-});
-
-
-downs.addEventListener('click', function(e) {
-    position= document.documentElement;
-    if (window.scrollY>50) {
-        position.scrollTop   =0 ;
-    } else {
-        position.scrollTop   = 600;
-    }
-
-
-   
-
-});
-
-</script>
-
-
-
-</script>
 </body>
 </html>
